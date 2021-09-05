@@ -3,11 +3,12 @@
 
 <head>
   <title> <%= full_title(yield(:title)) %> </title>
-  <%= render 'layouts/head' %>  
+  <%= render 'layouts/head' %>
   <%= render 'layouts/shim' %>
 </head>
 
 <body>
+  <%= render 'layouts/header' %>
   <div class="container">
     <%= yield %>
     <%= render 'layouts/footer' %>
